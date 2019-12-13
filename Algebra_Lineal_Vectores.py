@@ -28,31 +28,25 @@ def producto_vectorial(vector1, vector2):
     long_vector2 = len(vector2)
 
     # Valores iniciales
-    posicion1 = 1
     posicion2 = long_vector2 - 1
-    posicion1_neg = 2
-    posicion2_neg = 1
+    posicion1 = posicion2 - 1
+    posicion1_neg = long_vector1 - 1
+    posicion2_neg = posicion1_neg - 1
 
     if long_vector1 == long_vector2:
         for index in range(long_vector1):
 
-            if index == 1:
-                posicion1_aux = posicion1
-                posicion1 = posicion2
-                posicion2 = posicion1_aux - 1
-                posicion1_neg_aux = posicion1_neg
-                posicion1_neg = posicion2_neg - 1
-                posicion2_neg = posicion1_neg_aux
-            elif index == 2:
-                posicion1_aux = posicion1
-                posicion1 = posicion2
-                posicion2 = posicion1_aux - 1
-                posicion1_neg_aux = posicion1_neg
-                posicion1_neg = posicion2_neg - 1
-                posicion2_neg = posicion1_neg_aux
-
             resultado_index = vector1[posicion1] * vector2[posicion2] - vector1[posicion1_neg] * vector2[posicion2_neg]
             resultado.append(resultado_index)
+
+            # Asignar siguiente posicion
+            posicion1_aux = posicion1
+            posicion1 = posicion2
+            posicion2 = posicion1_aux - 1
+            posicion1_neg_aux = posicion1_neg
+            posicion1_neg = posicion2_neg - 1
+            posicion2_neg = posicion1_neg_aux
+
         return resultado
     else:
         print('Ambos vectores deben tener misma longitud.')
