@@ -9,4 +9,4 @@ git remote add origin https://github.com/fcernafukuzaki/Python-Learning.git \
 git remote -v \
 git pull origin master \
 git pull origin master --allow-unrelated-histories \
-git push origin master \
+git push origin master
