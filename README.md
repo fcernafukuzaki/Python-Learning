@@ -1,7 +1,7 @@
 # Python-Learning
-Learning Python
+Learning Python with linear algebra.
 
-### Crear repositorio local y clonar repositorio remoto
+#### Crear repositorio local y clonar repositorio remoto
 ~~~~
 git init
 git add .
