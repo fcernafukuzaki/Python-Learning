@@ -69,3 +69,22 @@ broadcast_vector = np.array([[1, 2, 3, 4, 5]])
 broadcast_matriz = np.array([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]])
 broadcast_matriz_vector = broadcast_matriz + broadcast_vector.T
 print('\tSuma de matriz y vector {}'.format(broadcast_matriz_vector))
+
+## multiplicación de matrices
+matriz = np.array([[1, -3 , 2], [5, 6, -1], [4, -1 ,3]])
+# vector = np.array([[-2, 5, 7]])
+vector = np.array([[-2], [5], [7]])
+multiplicacion = matriz * vector
+print(matriz)
+print(vector)
+print('Multiplicacion')
+print(multiplicacion)
+
+## Producto interno
+print('Producto interno de Matriz por Vector')
+producto_interno = matriz.dot(vector)
+print(producto_interno)
+print('Producto interno de Vector por Matriz')
+vector = np.array([[-2, 5, 7]])
+producto_interno = np.dot(vector, matriz)
+print(producto_interno)
