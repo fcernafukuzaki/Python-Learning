@@ -36,3 +36,12 @@ git checkout master
 git merge mejora_producto_vertorial
 git push origin master
 ~~~~
+### Generar llave pública para conectarme a mi repositorio
+~~~~
+ssh-keygen -t rsa -b 4096 -C "fcernaf@gmail.com"
+~~~~
+#### Colocar el directorio donde se registrará la llave pública.
+~~~~
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+~~~~
