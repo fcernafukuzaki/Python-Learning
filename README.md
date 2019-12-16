@@ -36,3 +36,21 @@ git checkout master
 git merge mejora_producto_vertorial
 git push origin master
 ~~~~
+### Crear un ALIAS a partir de un comando de Git
+~~~~
+alias arbol="git log --all --graph --decorate --oneline"
+~~~~
+### Crear un TAG del proyecto
+~~~~
+git tag -a v0.1 -m "Versión 0.1 de algebra lineal."
+git push origin --tags
+~~~~
+#### Eliminar un TAG en repositorio local
+~~~~
+git tag -d v0.1
+git push origin --tags
+~~~~
+#### Eliminar un TAG en repositorio remoto
+~~~~
+git push origin :refs/tags/v0.1
+~~~~
