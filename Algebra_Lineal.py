@@ -66,7 +66,7 @@ print('\tSuma del vector y transpuesta de vector {}'.format(suma_vector_vector))
 ##              dimensiones de un alemento de mayor dimensión.
 print('B R O A D C A S T')
 broadcast_vector = np.array([[1, 2, 3, 4, 5]])
-broadcast_matriz = np.array([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]])
+broadcast_matriz = np.array([[1, 2, 3, 4, 5], [2, 3, 4, 5, 6], [3, 4, 5, 6, 7], [4, 5, 6, 7, 8], [5, 6, 7, 8, 9]])
 broadcast_matriz_vector = broadcast_matriz + broadcast_vector.T
 print('\tSuma de matriz y vector {}'.format(broadcast_matriz_vector))
 
