@@ -1,0 +1,7 @@
+print('')
+print('C O N C E P T O S   D E   A L G E B R A   L I N E A L')
+print('')
+print('Sistema de ecuaciones lineal':)
+print('\tMás ecuaciones que variables => Sobredeterminado. No tiene solución.')
+print('\tMisma cantidad de ecuaciones y variables => Determinado. Si tiene solución.')
+print('\tMás variables que ecuaciones => Indeterminado. Tiene infinitas soluciones.')
