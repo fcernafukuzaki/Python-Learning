@@ -29,3 +29,23 @@ A = np.array([[1, 1], [1, 1]])
 #print(np.linalg.inv(A))
 
 ## Ax = B => x = B(A^-1)
+
+
+print('M A T R I Z   D I A G O N A L')
+print('Matriz diagonal cuadrada.')
+vector = np.array([1, 2, 3, 4, 5])
+matriz = np.diag(vector)
+print(matriz)
+# Resultado:
+# [[1 0 0 0 0]
+#  [0 2 0 0 0]
+#  [0 0 3 0 0]
+#  [0 0 0 4 0]
+#  [0 0 0 0 5]]
+print('Matriz diagonal, pero no cuadrada.')
+print(matriz[0:4, 0:3])
+# Resultado:
+# [[1 0 0]
+#  [0 2 0]
+#  [0 0 3]
+#  [0 0 0]
