@@ -1,0 +1,12 @@
+print('')
+print('C O N C E P T O S   D E   A L G E B R A   L I N E A L')
+print('')
+print('Sistema de ecuaciones lineal':)
+print('\tMás ecuaciones que variables => Sobredeterminado. No tiene solución.')
+print('\tMisma cantidad de ecuaciones y variables => Determinado. Si tiene solución.')
+print('\tMás variables que ecuaciones => Indeterminado. Tiene infinitas soluciones.')
+
+print('\tSi posee solución')
+print('\tMatriz debe ser cuadrada.')
+print('\tTodos los vectores deben ser independientes. No deben contener un vector LD')
+print('\t\tNo deben haber filas o columnas que pueden ser escritas como resultado de las otras filas o columnas')

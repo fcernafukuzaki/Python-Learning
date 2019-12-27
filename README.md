@@ -54,3 +54,12 @@ git push origin --tags
 ~~~~
 git push origin :refs/tags/v0.1
 ~~~~
+### Generar llave pública para conectarme a mi repositorio
+~~~~
+ssh-keygen -t rsa -b 4096 -C "fcernaf@gmail.com"
+~~~~
+#### Colocar el directorio donde se registrará la llave pública.
+~~~~
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+~~~~
